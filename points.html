@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>object-class-points</title>
+		<!-- styles -->
+		<link rel="stylesheet" href="./styles.css" />
+		<!-- font awesome -->
+		<link rel="stylesheet" href="./fontawesome-free-6.2.1-web/css/all.css" />
+	</head>
+	<body>
+		<!-- navigation button -->
+		<span class="nav-btn" id="nav-btn">
+			<i class="fa-solid fa-bars-staggered"></i>
+		</span>
+
+		<!-- navigation bar -->
+		<nav class="navbar" id="navbar">
+			<div class="navbar-header">
+				<span class="nav-close" id="nav-close">
+					<i class="fas fa-times"></i>
+				</span>
+			</div>
+			<ul class="nav-items">
+				<!-- <span class="navbar-links">Notes Navigator</span>
+        <br />
+        <li><a href="#introduction" class="nav-link">Introduction</a></li>
+        <li><a href="#object-class" class="nav-link">Object Class</a></li>
+        <li><a href="#tostring" class="nav-link">toString() Method</a></li>
+        <li>
+          <a href="#hashcode" class="nav-link">hashCode() Method</a>
+        </li>
+        <li><a href="#equals" class="nav-link">equals() Method</a></li>
+        <li><a href="#clone" class="nav-link">clone() Method</a></li>
+        <li>
+          <a href="#finalize" class="nav-link">finalize() Method</a>
+        </li>
+        <li><a href="#wait" class="nav-link">wait() Method</a></li>
+        <li><a href="#notify" class="nav-link">notify() Method</a></li>
+        <li>
+          <a href="#notify-all" class="nav-link">notifyAll() Method </a>
+        </li> -->
+				<span class="navbar-links">Resources Navigator</span>
+				<br />
+				<li><a href="./index.html" class="nav-link">notes</a></li>
+				<li><a href="./programs.html" class="nav-link">programs</a></li>
+				<li><a href="./points.html" class="nav-link">points</a></li>
+				<li><a href="./interview-qa.html" class="nav-link">interview QA</a></li>
+				<li>
+					<a href="./assignment-qa.html" class="nav-link">assignment QA</a>
+				</li>
+			</ul>
+		</nav>
+		<!-- header -->
+		<header class="header">
+			<div class="banner">
+				<h1 class="banner-title">Object class in java points</h1>
+			</div>
+		</header>
+
+		<!-- end of header -->
+		<!-- content-divider -->
+		<div class="content-divider"></div>
+		<!-- end of content divider -->
+
+		<!-- notes body start -->
+		<main class="main">
+			<section class="class-notes">
+				<!-- <h2 class="subject-title">Subject Title</h2> -->
+				<article class="topic">
+					<h3 class="topic-title" id="introduction">Point No. 1</h3>
+					<p class="topic-content">
+						<i class="fa-solid fa-check"></i> Object class is the super most
+						class available in the Java language.
+					</p>
+				</article>
+				<article class="topic">
+					<h3 class="topic-title" id="introduction">Point No. 2</h3>
+					<p class="topic-content">
+						<i class="fa-solid fa-check"></i> If any class or any interface is
+						available in the java.lang package we dont have to import it.
+						Straight away we can use it. Object class is also available in the
+						java.lang package so we dont have to import it explicitly.
+					</p>
+				</article>
+				<article class="topic">
+					<h3 class="topic-title" id="introduction">Point No. 3</h3>
+					<p class="topic-content">
+						<i class="fa-solid fa-check"></i> The most commonly used and
+						required general-purpose classes and interfaces in Java programming
+						are grouped into a package known as "java.lang". All the classes and
+						interfaces available in this package are automatically accessible to
+						any Java program without needing to import them explicitly.
+					</p>
+				</article>
+				<article class="topic">
+					<h3 class="topic-title" id="introduction">Point No. 4</h3>
+					<p class="topic-content">
+						<i class="fa-solid fa-check"></i> There is no chance of writing even
+						a single runnable Java program without using a member of "java.lang"
+						package.
+					</p>
+				</article>
+				<article class="topic">
+					<h3 class="topic-title" id="introduction">Point No. 5</h3>
+					<p class="topic-content">
+						<i class="fa-solid fa-check"></i> The most commonly required methods
+						for all the classes are available in the object class.
+					</p>
+				</article>
+				<article class="topic">
+					<h3 class="topic-title" id="introduction">Point No. 6</h3>
+					<p class="topic-content">
+						<i class="fa-solid fa-check"></i> All the classes whether they are
+						user defined or inbuilt, all are sub classes to the Object class,
+						whether directly or indirectly. In other words all the classes are
+						inheriting from the Object class.
+					</p>
+					<pre>
+class A extends Object
+{
+}
+          </pre>
+				</article>
+				<article class="topic">
+					<h3 class="topic-title" id="introduction">Point No. 7</h3>
+					<p class="topic-content">
+						<i class="fa-solid fa-check"></i> Totally 12 methods are available
+						in Object class.
+					</p>
+					<ol class="topic-content">
+						<li>protected Object clone()</li>
+						<li>boolean equals(Object obj)</li>
+						<li>protected void finalize()</li>
+						<li>
+							Class<?>
+							getClass()
+						</li>
+						<li>int hashCode()</li>
+						<li>void notify()</li>
+						<li>void notifyAll()</li>
+						<li>String toString()</li>
+						<li>void wait()</li>
+						<li>void wait(long timeout)</li>
+						<li>void wait(long timeout, int nanos)</li>
+						<li>private static native void registerNatives();</li>
+					</ol>
+				</article>
+				<article class="topic">
+					<h3 class="topic-title" id="introduction">Point No. 8</h3>
+					<p class="topic-content">
+						<i class="fa-solid fa-check"></i> If you are not overriding
+						toString() method of Object class, and if you are trying to print
+						the object referece you will get the Objects memory location address
+						not the content. Ex: class-name@hashCode in the form of hexadecimal
+						A@36baf30c
+					</p>
+				</article>
+				<article class="topic">
+					<h3 class="topic-title" id="introduction">Point No. 9</h3>
+					<p class="topic-content">
+						<i class="fa-solid fa-check"></i> Usually we dont worry about the
+						object's memory address instead we need the content of the object.
+					</p>
+				</article>
+				<article class="topic">
+					<h3 class="topic-title" id="introduction">Point No. 10</h3>
+					<p class="topic-content">
+						<i class="fa-solid fa-check"></i> In order to get the content of the
+						object instead its address we need to override toString of object
+						class in our class.
+					</p>
+				</article>
+				<article class="topic">
+					<h3 class="topic-title" id="introduction">Point No. 11</h3>
+					<p class="topic-content">
+						<i class="fa-solid fa-check"></i> If you try to print the referece
+						of an object then internally it is going to call the toString method
+						and we get the return value.
+					</p>
+				</article>
+				<article class="topic">
+					<h3 class="topic-title" id="introduction">Point No. 12</h3>
+					<p class="topic-content">
+						<i class="fa-solid fa-check"></i> In all the wrapper classes,
+						collection classes and in String, String Buffer and String Builder
+						classes toString method got overrided to return the object's
+						content.
+					</p>
+				</article>
+				<article class="topic">
+					<h3 class="topic-title" id="introduction">Point No. 13</h3>
+					<p class="topic-content">
+						<i class="fa-solid fa-check"></i> For every object a unique code
+						will be generated by the JVM it is called <b>hashCode</b>.
+					</p>
+				</article>
+				<article class="topic">
+					<h3 class="topic-title" id="introduction">Point No. 14</h3>
+					<p class="topic-content">
+						<i class="fa-solid fa-check"></i> hashcode does not represent
+						address of object, JVM will use this hashcode while saving objects
+						into hashing related datastructures like hashtable, hashMap, hashSet
+						etc.
+					</p>
+				</article>
+				<article class="topic">
+					<h3 class="topic-title" id="introduction">Point No. 15</h3>
+					<p class="topic-content">
+						<i class="fa-solid fa-check"></i> The main advantage of saving
+						objects based on hashcode is search operation will become easy. (the
+						most powerful and popular algorith is hashing).
+					</p>
+				</article>
+				<article class="topic">
+					<h3 class="topic-title" id="introduction">Point No. 16</h3>
+					<p class="topic-content">
+						<i class="fa-solid fa-check"></i> The registerNatives() method in
+						Java was deprecated in Java 9 and removed in Java 17. It was used to
+						register native methods with the JVM. Starting from Java 17, this
+						method is no longer available, and native methods are instead
+						registered using method handles.
+					</p>
+				</article>
+				<article class="topic">
+					<h3 class="topic-title" id="introduction">Point No. 17</h3>
+					<p class="topic-content">
+						<i class="fa-solid fa-check"></i> The registerNatives() method in
+						Java was deprecated in Java 9 and removed in Java 17. It was used to
+						register native methods with the JVM. Starting from Java 17, this
+						method is no longer available, and native methods are instead
+						registered using method handles.
+					</p>
+				</article>
+
+				<!-- Add more articles for other topics -->
+			</section>
+		</main>
+		<!-- notes body end -->
+
+		<!-- content-divider -->
+		<div class="content-divider"></div>
+		<!-- end of content divider -->
+		<!-- footer section -->
+		<footer class="footer">
+			<div class="section-center">
+				<div class="social-icons">
+					<!-- social icon -->
+					<a href="#" class="social-icon">
+						<i class="fa-brands fa-square-facebook"></i>
+					</a>
+					<!-- social icon -->
+					<a href="#" class="social-icon">
+						<i class="fa-brands fa-square-twitter"></i>
+					</a>
+					<!-- social icon -->
+					<a href="#" class="social-icon">
+						<i class="fa-brands fa-square-instagram"></i>
+					</a>
+					<!-- end of social icon -->
+				</div>
+				<p class="footer-text">
+					&copy; <span class="text-primary">vijays programming 2024</span> all
+					rights reserved
+				</p>
+			</div>
+		</footer>
+		<script src="./app.js"></script>
+	</body>
+</html>

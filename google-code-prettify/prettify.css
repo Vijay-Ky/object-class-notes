@@ -1,0 +1,70 @@
+/* .pln{color:#000}@media screen{.str{color:#080}.kwd{color:#008}.com{color:#800}.typ{color:red}.lit{color:#066}.clo,.opn,.pun{color:#000}.tag{color:#008}.atn{color:#606}.atv{color:#080}.dec,.var{color:#606}.fun{color:red}}@media print,projection{.kwd,.tag,.typ{font-weight:700}.str{color:#060}.kwd{color:#006}.com{color:#600;font-style:italic}.typ{color:#404}.lit{color:#044}.clo,.opn,.pun{color:#440}.tag{color:#006}.atn{color:#404}.atv{color:#060}}pre.prettyprint{padding:2px;border:1px solid #888}ol.linenums{margin-top:0;margin-bottom:0}li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8{list-style-type:none}li.L1,li.L3,li.L5,li.L7,li.L9{background:#eee} */
+
+/* Resetting styles for better understanding */
+.pln { color: #000; }
+.str { color: #080; }
+.kwd { color: #008; }
+.com { color: #800; }
+.typ { color: rgba(255, 0, 0, 0.822); }
+.lit { color: #066; }
+.clo, .opn, .pun { color: #000; }
+.tag { color: #008; }
+.atn { color: #606; }
+.atv { color: #080; }
+.dec, .var { color: #606; }
+.fun { color: red; }
+
+@media screen {
+    .str { color: #080; }
+    .kwd { color: #008; }
+    .com { color: #600; font-style: italic; }
+    .typ { color: rgba(255, 0, 0, 0.822); }
+    .lit { color: #044; }
+    .clo, .opn, .pun { color: #000; }
+    .tag { color: #006; }
+    .atn { color: #404; }
+    .atv { color: #060; }
+}
+
+@media print, projection {
+    .kwd, .tag, .typ { font-weight: 700; }
+    .str { color: #060; }
+    .kwd { color: #006; }
+    .com { color: #600; font-style: italic; }
+    .typ { color: rgba(255, 0, 0, 0.822); }
+    .lit { color: #044; }
+    .clo, .opn, .pun { color: #000; }
+    .tag { color: #006; }
+    .atn { color: #404; }
+    .atv { color: #060; }
+}
+
+pre.prettyprint {
+    padding: 2px;
+    border: 1px solid #888;
+    /* Ensure position relative for absolute positioning */
+    position: relative; 
+}
+
+/* Line number styles */
+ol.linenums {
+    margin-top: 0;
+    margin-left: 35px;
+    margin-bottom: 0;
+    padding-left: 0; /* Reset padding to avoid indentation */
+    counter-reset: linenumber; /* Reset the counter */
+    list-style-type: none; /* Remove default numbering */
+}
+
+ol.linenums li {
+    position: relative; /* Position the line numbers */
+}
+
+ol.linenums li:before {
+    content: counter(linenumber); /* Display the current value of the counter */
+    counter-increment: linenumber; /* Increment the counter */
+    position: absolute; /* Position the line numbers absolutely */
+    left: -1.8em; /* Adjust the position of line numbers */
+    text-align: right; /* Align line numbers to the right */
+    color: #999; /* Color of line numbers */
+}

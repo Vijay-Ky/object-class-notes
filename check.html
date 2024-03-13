@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Objective Type Question</title>
+    <style>
+      .answer {
+        display: none; /* Hide answer by default */
+      }
+      .correct {
+        color: green;
+      }
+      .incorrect {
+        color: red;
+      }
+    </style>
+    <script>
+      function revealAnswer() {
+        var answer = document.getElementById("answer");
+        if (answer.style.display === "none") {
+          answer.style.display = "block"; // Show answer
+        } else {
+          answer.style.display = "none"; // Hide answer
+        }
+      }
+
+      function checkAnswer(correctAnswer, resultMessageId) {
+        var selectedAnswer = document.querySelector(
+          'input[name="answer"]:checked'
+        ).value;
+        var resultMessage = document.getElementById(resultMessageId);
+        if (selectedAnswer === correctAnswer) {
+          resultMessage.innerText = "Correct!";
+          resultMessage.classList.remove("incorrect");
+          resultMessage.classList.add("correct");
+        } else {
+          resultMessage.innerText = "Incorrect!";
+          resultMessage.classList.remove("correct");
+          resultMessage.classList.add("incorrect");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Objective Type Question</h2>
+    <p>package toString;</p>
+    <pre>
+class A{
+        int i;
+}
+public class M1 {
+        public static void main(String[] args) {
+                A a1 = new A();
+                a1.i = 20;
+                System.out.println(a1);
+        }
+}
+</pre
+    >
+    <p>What will be the output?</p>
+    <form>
+      <input
+        type="radio"
+        id="optionA"
+        name="answer"
+        value="A"
+        onclick="checkAnswer('A', 'result-message')"
+      />
+      <label for="optionA">A. toString.A@15db9742</label><br />
+      <input
+        type="radio"
+        id="optionB"
+        name="answer"
+        value="B"
+        onclick="checkAnswer('B', 'result-message')"
+      />
+      <label for="optionB">B. 20</label><br />
+      <input
+        type="radio"
+        id="optionC"
+        name="answer"
+        value="C"
+        onclick="checkAnswer('C', 'result-message')"
+      />
+      <label for="optionC">C. Compilation Error</label><br />
+      <input
+        type="radio"
+        id="optionD"
+        name="answer"
+        value="D"
+        onclick="checkAnswer('D', 'result-message')"
+      />
+      <label for="optionD">D. None</label><br />
+    </form>
+    <p id="result-message"></p>
+    <button onclick="revealAnswer()">Reveal Answer</button>
+    <div id="answer" class="answer">
+      <p><strong>Answer:</strong> Option A. <code>toString.A@15db9742</code></p>
+    </div>
+  </body>
+</html>

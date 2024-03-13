@@ -1,0 +1,6971 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>assignment questions and answers</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="./fontawesome-free-6.2.1-web/css/all.css" />
+  </head>
+  <body>
+    <!-- navigation button -->
+    <span class="nav-btn" id="nav-btn">
+      <i class="fa-solid fa-bars-staggered"></i>
+    </span>
+
+    <!-- navigation bar -->
+    <nav class="navbar" id="navbar">
+      <div class="navbar-header">
+        <span class="nav-close" id="nav-close">
+          <i class="fas fa-times"></i>
+        </span>
+      </div>
+      <ul class="nav-items">
+        <!-- <span class="navbar-links">Notes Navigator</span>
+        <br />
+        <li><a href="#introduction" class="nav-link">Introduction</a></li>
+        <li><a href="#object-class" class="nav-link">Object Class</a></li>
+        <li><a href="#tostring" class="nav-link">toString() Method</a></li>
+        <li>
+          <a href="#hashcode" class="nav-link">hashCode() Method</a>
+        </li>
+        <li><a href="#equals" class="nav-link">equals() Method</a></li>
+        <li><a href="#clone" class="nav-link">clone() Method</a></li>
+        <li>
+          <a href="#finalize" class="nav-link">finalize() Method</a>
+        </li>
+        <li><a href="#wait" class="nav-link">wait() Method</a></li>
+        <li><a href="#notify" class="nav-link">notify() Method</a></li>
+        <li>
+          <a href="#notify-all" class="nav-link">notifyAll() Method </a>
+        </li> -->
+        <span class="navbar-links">Resources Navigator</span>
+        <br />
+        <li><a href="./index.html" class="nav-link">notes</a></li>
+        <li><a href="./programs.html" class="nav-link">programs</a></li>
+        <li><a href="./points.html" class="nav-link">points</a></li>
+        <li><a href="./interview-qa.html" class="nav-link">interview QA</a></li>
+        <li>
+          <a href="./assignment-qa.html" class="nav-link">assignment QA</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- header -->
+    <header class="header">
+      <div class="banner">
+        <h1 class="banner-title">assignment questions and answers</h1>
+      </div>
+    </header>
+
+    <!-- end of header -->
+    <!-- content-divider -->
+    <div class="content-divider"></div>
+    <!-- end of content divider -->
+
+    <!-- notes body start -->
+    <main class="main">
+      <section class="class-notes">
+        <!-- <h2 class="subject-title">Subject Title</h2> -->
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <!-- Add more articles for other topics -->
+
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 2</h3>
+          <pre>
+            package toString.pack1;
+
+            class A{
+                    int i;
+                    public String toString() {
+                            return "its A type object with i value as: " + i;
+                    }
+            }
+            public class M1 {
+                    public static void main(String[] args) {
+                            A a1 = new A();
+                            a1.i = 20;
+                            System.out.println(a1);
+                    }
+            }
+            
+            
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+        <article class="topic">
+          <h3 class="topic-title" id="introduction">Question No. 1</h3>
+          <pre>
+  class A
+  {
+      int i;
+  }
+  public class M1
+  {
+      public static void main(String[] args)
+      {
+          A a1 = new A();
+          a1.i = 20;
+          System.out.println(a1);
+      }
+  }
+            </pre
+          >
+          <br />
+          <p class="topic-content sub-heading">What will be the output?</p>
+          <br />
+          <form class="options">
+            <input
+              type="radio"
+              id="optionA"
+              name="answer"
+              value="A"
+              onclick="checkAnswer()"
+            />
+            <label for="optionA">A. toString.A@15db9742</label><br />
+            <input
+              type="radio"
+              id="optionB"
+              name="answer"
+              value="B"
+              onclick="checkAnswer()"
+            />
+            <label for="optionB">B. 20</label><br />
+            <input
+              type="radio"
+              id="optionC"
+              name="answer"
+              value="C"
+              onclick="checkAnswer()"
+            />
+            <label for="optionC">C. Compilation Error</label><br />
+            <input
+              type="radio"
+              id="optionD"
+              name="answer"
+              value="D"
+              onclick="checkAnswer()"
+            />
+            <label for="optionD">D. None</label><br />
+          </form>
+          <br />
+          <p id="result-message"></p>
+          <br />
+          <button onclick="revealAnswer()" class="reveal-button options">
+            Reveal Answer
+          </button>
+
+          <div id="answer" class="answer">
+            <br />
+            <p class="revealed-answer">
+              <strong>Answer:</strong> Option A.
+              <code>toString.A@15db9742</code>
+            </p>
+          </div>
+        </article>
+      </section>
+    </main>
+    <!-- notes body end -->
+
+    <!-- content-divider -->
+    <div class="content-divider"></div>
+    <!-- end of content divider -->
+    <!-- footer section -->
+    <footer class="footer">
+      <div class="section-center">
+        <div class="social-icons">
+          <!-- social icon -->
+          <a href="#" class="social-icon">
+            <i class="fa-brands fa-square-facebook"></i>
+          </a>
+          <!-- social icon -->
+          <a href="#" class="social-icon">
+            <i class="fa-brands fa-square-twitter"></i>
+          </a>
+          <!-- social icon -->
+          <a href="#" class="social-icon">
+            <i class="fa-brands fa-square-instagram"></i>
+          </a>
+          <!-- end of social icon -->
+        </div>
+        <p class="footer-text">
+          &copy; <span class="text-primary">vijays programming 2024</span> all
+          rights reserved
+        </p>
+      </div>
+    </footer>
+    <script src="./app.js"></script>
+  </body>
+</html>
